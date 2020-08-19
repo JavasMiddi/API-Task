@@ -10,13 +10,13 @@ def animal_name():
 @app.route('/animal/noise', methods=['POST'])
 def animal_noise():
     animal = request.data.decode("utf-8")
-    if animal == "cat";
+    if animal == "cat":
         noise = "meow"
-    elif animal == "dog";
+    elif animal == "dog":
         noise = "woof"
-    elif animal == "cow";
+    elif animal == "cow":
         noise = "moo"
-    elif animal == "duck";
+    elif animal == "duck":
         noise = "quack"
     else:
         noise = "Noise is unknown"
